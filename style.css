@@ -1,0 +1,228 @@
+
+body{
+    margin: 0;
+}
+.container{
+    margin: 0 150px;
+}
+/* Header Section Style  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+
+}
+nav h3{
+    font-size: 25px;
+    color: #3A3A3A
+}
+
+.menu{
+    
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 18px;
+}
+.menu ul li{
+    padding: 0 20px;
+}
+/* .menu ul li input{
+    color: #3A3A3A;
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+} */
+/* Header Main Contant  */
+.header-part{
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+    color: #3A3A3A
+}
+.header-contant{
+    /* width: 100%; */
+    /* border: 2px solid; */
+}
+.header-contant h1{
+    font-size: 55px;
+    margin-bottom: 0;
+}
+.header-contant p{
+    font-size: 18px;
+}
+.header-image{
+    padding-left: 50px;
+}
+/* .round-shap{
+    border: 2px round;
+    background-color: #E02C6D;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+} */
+.buttom-box{
+    margin-top: 40px;
+}
+.buttom-box a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+.arrow{
+    padding-left: 5px;
+}
+/* Online-Markete-Place */
+.online-market-place{
+    border-top: 2px solid #E0E6ED;
+    border-bottom: 2px solid #E0E6ED;
+    margin: 50px 0;
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around;
+    align-items: center;
+}
+/* popular Collection */
+#title {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.collection-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.card{
+    box-shadow: 2px 2px 25px gray;
+    border-radius: 5px;
+    padding: 15px;
+}
+.card h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.product-valu{
+    color: #222222;
+    font-size: 25px;
+    /* padding-bottom: 40px; */
+}
+.star{
+    margin-top: 10px;
+}
+.card p, span{
+    color: #787885;
+    margin: 2px 0;
+}
+#see-more{
+    color: #E02C6D;
+    font-weight: bold;
+    text-align: end;
+}
+/* Featured products place style  */
+
+.products-place{
+   display: flex;
+   margin: 50px 0;
+   /* justify-content: space-between;  */
+}
+.place-details{
+    padding-left: 45px;
+    padding-bottom: 40px;
+}
+.place-details h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.place-details p{
+    font-size: 18px;
+    font-weight: 900;
+}
+/* footer section style  */
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+footer h3{
+    font-size: 25px;
+    margin: 15px;
+}
+footer p{
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* Small Device Responsible Style  */
+
+@media only screen and (max-width: 600px) {
+    .container{
+        margin: 0 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .header-part{
+        /* background-color: yellow; */
+        /* display: grid; */
+        /* grid-template-rows: repeat(2, 1fr); */
+        /* grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .header-contant{
+        text-align: center;
+    }
+    .online-market-place{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
+        justify-content: space-between;
+        grid-auto-rows: 50px;
+    }
+    .collection-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-image{
+        /* width: 100%; */
+        margin: 0;
+    }
+    .card-image img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .products-place{
+        /* display: grid;
+            grid-template-columns: repeat(1, 1fr); */
+            display: flex;
+            flex-direction: column-reverse;
+    }
+    .place-details{
+        text-align: center;
+    }
+    .place-img{
+        width: 100%;
+    }
+    .place-img img{
+        width: 100%;
+    }
+}
